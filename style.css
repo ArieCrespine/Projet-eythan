@@ -1,0 +1,60 @@
+body {
+  /* text-align: center; */
+  margin: 0px;
+  padding: 0px;
+}
+
+hr {
+  /* border-style: dotted none none ; */
+  /*border-top: 10px dotted rgb(163, 158, 158,0.75);*/
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #eeee;
+  border-width: 7px;
+  width: 18%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(8, 32, 79,0.89);
+}
+
+header img {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+header {
+  padding: 5% 5% 7%;
+}
+
+.header--contact {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+}
+
+#description {
+  height: 40vh;
+  /* background-color: aqua; */
+}
+
+.description--text {
+  width: 50%;
+}
+
+input {
+  margin-left: 15px;
+  border-radius: 3px;
+  border: 1px dotted rgb(83, 68, 68);
+}
+
+header p {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin-right: 30%;
+}
+
+/* rgb(65, 150, 224); couleur Wix */
