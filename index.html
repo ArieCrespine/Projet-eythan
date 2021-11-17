@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>CPF Formation</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Font -->
   </head>
   <body>
     <header>
@@ -18,22 +24,42 @@
       </div>
     </header>
     <br /><br />
-    <hr />
     <section id="description">
       <div>
-        <h1>Votre Formation cle en main</h1>
-        <p class="description--text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
-          harum.
-        </p>
+        <img
+          class="description--bgImg"
+          src="images/img-bg-description.jpg"
+          alt="img-bg-description"
+        />
       </div>
+      <h1 class="description--h1">Votre Formation cle en main</h1>
+      <p class="description--text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+        harum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
+        dicta? Alias illo eum optio iure quis saepe ut dignissimos veniam.
+      </p>
+
+      <a href="#form" class="BUTTON_BQP">Connaitre Mon Solde CPF</a>
     </section>
+
+    <!-- Formulaire -->
+
     <section id="form">
-      <h3>Annonce du formulaire</h3>
+      <h3 class="form--h3">Annonce du formulaire</h3>
       <form action="" method="get">
         <p>Formation souhaitée</p>
         <!-- liste deroulante -->
-        <p>liste deroulante a integrer</p>
+        <label class="form--formationSouhaiter" for="cars"
+          >Quel formation souhaitez vous integrer ?</label
+        >
+        <br />
+
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
 
         <p>etes vous salarie du secteur public ou retraite?</p>
         <input type="radio" name="travail" value="oui" id="travail" />
