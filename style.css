@@ -68,12 +68,13 @@ header img {
 
 .description--text {
   margin-left: 5%;
+  width:85%;
   color: rgb(8, 32, 79, 0.89);
 }
 
 .BUTTON_BQP {
   margin-top: 10px;
-  margin-left: 15%;
+  margin-left: 5%;
   background: #3d94f6;
   background-image: -webkit-linear-gradient(top, #3d94f6, #1e62d0);
   background-image: -moz-linear-gradient(top, #3d94f6, #1e62d0);
