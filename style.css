@@ -19,14 +19,18 @@ hr {
 header {
   padding: 5% 5% 7%;
   background-color: #fbfbfb;
+  height: 25px;
+  box-sizing: content-box;
 }
 
 a {
   text-decoration: none;
-  color: rgb(8, 32, 79, 0.89);
+  color: rgba(62, 105, 192, 0.89);
+  font-weight: bold;
 }
 
 header img {
+  display: block;
   position: absolute;
   left: 15px;
   top: 10px;
@@ -34,7 +38,7 @@ header img {
 
 .header--contact {
   position: absolute;
-  right: 15px;
+  right: 20px;
   top: 30px;
 }
 
@@ -68,8 +72,9 @@ header img {
 
 .description--text {
   margin-left: 5%;
-  width:85%;
+  width: 85%;
   color: rgb(8, 32, 79, 0.89);
+  font-weight: 500;
 }
 
 .BUTTON_BQP {
@@ -81,17 +86,17 @@ header img {
   background-image: -ms-linear-gradient(top, #3d94f6, #1e62d0);
   background-image: -o-linear-gradient(top, #3d94f6, #1e62d0);
   background-image: -webkit-gradient(to bottom, #3d94f6, #1e62d0);
-  -webkit-border-radius: 29px;
-  -moz-border-radius: 29px;
-  border-radius: 29px;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  border-radius: 11px;
   color: #ffffff;
   font-family: Arial;
-  font-size: 20px;
+  font-size: 1rem;
   /* font-weight: 100; */
-  padding: 15px;
-  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  padding: 12px;
+  /* -webkit-box-shadow: 1px 1px 20px 0 #000000;
   -moz-box-shadow: 1px 1px 20px 0 #000000;
-  box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000; */
   border: solid #337fed 1px;
   text-decoration: none;
   display: inline-block;
@@ -109,28 +114,79 @@ header img {
   background-image: -webkit-gradient(to bottom, #1e62d0, #3d94f6);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  border-radius: 20px;
+  border-radius: 5px;
   text-decoration: none;
 }
 
-/* Formulaire */
+/* Form */
 
-.form--h3 {
-  margin-top: 17%;
+#form {
   margin-left: 5%;
 }
 
+.form--h3 {
+  font-size: 1.7rem;
+  color: rgb(8, 32, 79, 0.89);
+}
+
 input {
+  margin-top: 10px;
   margin-left: 15px;
   border-radius: 3px;
-  border: 1px dotted rgb(83, 68, 68);
+  border: 2px solid rgb(124, 163, 223);
+  border-radius: 5px;
 }
 
-header p {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  margin-right: 30%;
+select {
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 8px;
+  border: solid #337fed 1px;
 }
 
-/* rgb(65, 150, 224); couleur Wix */
+/* End Form */
+
+/* Footer */
+
+#avantages {
+  background-color: rgb(65, 150, 224);
+  text-align: center;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.feature-item {
+  padding: 4.5%;
+  /* permet de centrer le texte et laisse place entre elements en mode mobile+tablette */
+}
+
+.feature-i {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 4rem;
+}
+/* 
+.feature-i-petit {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 2rem;
+} */
+
+/* .feature-i:hover {
+  color: #ff4c68;
+} */
+
+.feature-h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.feature-description {
+  color: #fbfbfb;
+  font-weight: 500;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+/* End Footer */
