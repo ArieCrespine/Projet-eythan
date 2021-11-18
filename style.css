@@ -18,7 +18,7 @@ hr {
 
 header {
   background-color: #fbfbfb;
-  height: 65px;
+  height: 80px;
   box-sizing: content-box;
   padding-bottom: 10px;
 }
@@ -34,13 +34,13 @@ header img {
   position: absolute;
   left: 15px;
   top: 10px;
-  height: 55px;
+  height: 70px;
 }
 
 .header--contact {
   position: absolute;
   right: 20px;
-  top: 15px;
+  top: 30px;
 }
 
 #description {
