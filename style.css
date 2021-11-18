@@ -17,10 +17,10 @@ hr {
 */
 
 header {
-  padding: 5% 5% 7%;
   background-color: #fbfbfb;
-  height: 20px;
+  height: 50px;
   box-sizing: content-box;
+  padding-bottom: 10px;
 }
 
 a {
@@ -34,7 +34,7 @@ header img {
   position: absolute;
   left: 15px;
   top: 10px;
-  height: 50px;
+  height: 40px;
 }
 
 .header--contact {
