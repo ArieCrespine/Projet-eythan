@@ -154,11 +154,11 @@ select {
 }
 
 .container-fluid {
-  padding: 7% 15%;
+  padding: 3% 10%;
 }
 
 .feature-item {
-  padding: 4.5%;
+  padding: 1%;
   /* permet de centrer le texte et laisse place entre elements en mode mobile+tablette */
 }
 
