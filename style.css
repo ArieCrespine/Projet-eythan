@@ -17,10 +17,13 @@ hr {
 */
 
 header {
+  /* position:sticky ;
+  top: 0;
+  z-index: 5; */
   background-color: #fbfbfb;
-  height: 80px;
+  height: 60px;
   box-sizing: content-box;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
 a {
@@ -33,14 +36,14 @@ header img {
   display: block;
   position: absolute;
   left: 15px;
-  top: 10px;
-  height: 70px;
+  top: 5px;
+  height: 50px;
 }
 
 .header--contact {
   position: absolute;
   right: 20px;
-  top: 30px;
+  top: 20px;
 }
 
 #description {
