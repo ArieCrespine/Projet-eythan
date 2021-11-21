@@ -4,6 +4,19 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.accueuil {
+  position: relative;
+  overflow: hidden;
+  height:100vh;
+}
+
+.accueuil--img {
+  position: absolute;
+  height: 100%;
+  opacity: 0.3;
+  transform: translateX(-200px);
+}
+
 header {
   /* position:sticky ;
   top: 0;
@@ -13,12 +26,6 @@ header {
   /* padding-bottom: 10px; */
 }
 
-a {
-  text-decoration: none;
-  color: rgba(62, 105, 192, 0.89);
-  font-weight: bold;
-}
-
 .header--logo {
   display: block;
   position: absolute;
@@ -26,53 +33,63 @@ a {
   top: 5px;
   height: 50px;
 }
+/* 
+.header--logoQualiopi{
+  position: absolute;
+  right: 50px;
+  top: 20px;
+} */
 
 .header--contact {
   position: absolute;
   right: 20px;
   top: 20px;
+  text-decoration: none;
+  color: rgba(62, 105, 192, 0.89);
+  font-weight: bold;
 }
 
-.accueuil {
-  position: relative;
-}
-
-.accueuil--img {
-  position: absolute;
-  width: 100%;
-  max-height: 100%;
-  opacity: 0.3;
-}
+/* DESCRIPTION  */
 
 #description {
   position: relative;
-  height: 60vh;
   max-width: 100vw;
 }
+/* 
+Au cas ou je met l'image que ici.
+
 
 #description div {
   width: 600px;
   max-height: 300px;
   overflow: hidden;
-}
-
+} */
+/* 
 .description--bgImg {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
   opacity: 0.3;
-}
+} */
 
 .description--h1 {
   font-weight: 900;
   margin-left: 5%;
+  margin-top: 9%;
   font-size: 2rem;
   color: rgb(8, 32, 79, 0.89);
 }
 
+@media (min-width: 768px) {
+  .description--h1 {
+    margin-top: 5%;
+  }
+}
+
 .description--text {
   margin-left: 5%;
+  margin-top: 5%;
   width: 85%;
   color: rgb(8, 32, 79, 0.7);
   font-weight: 600;
@@ -80,12 +97,22 @@ a {
 
 .btnLien {
   margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 85%;
+  border-radius: 0.5rem;
+  background-color: rgb(8, 32, 79, 0.89);
+}
+
+.btnLien:hover {
+  background-color: rgb(76, 131, 241);
 }
 
 /* Form */
 
 #form {
   margin-left: 5%;
+  margin-top: 5%;
 }
 
 .form--h3 {
