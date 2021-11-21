@@ -35,8 +35,6 @@ a {
 
 .accueuil {
   position: relative;
-  height: 300px;
-  
 }
 
 .accueuil--img {
@@ -76,7 +74,7 @@ a {
 .description--text {
   margin-left: 5%;
   width: 85%;
-  color: rgb(8, 32, 79, 0.70);
+  color: rgb(8, 32, 79, 0.7);
   font-weight: 600;
 }
 
