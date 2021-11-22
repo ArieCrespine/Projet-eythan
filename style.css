@@ -14,10 +14,11 @@ body {
   position: absolute;
   height: 100%;
   opacity: 0.3;
-  transform: translateX(-200px);
+
   -webkit-transform: translateX(-200px);
   -moz-transform: translateX(-200px);
   -ms-transform: translateX(-200);
+  transform: translateX(-200px);
 }
 
 header {
@@ -187,10 +188,9 @@ select {
 }
 /* End Avantages */
 
-
 /* Footer */
 
-footer{
+footer {
   text-align: center;
 }
 
@@ -198,10 +198,11 @@ footer{
   margin-right: 2%;
   margin-bottom: 1%;
   color: black;
-  
 }
 
-footer a, a:hover, a:focus {
+footer a,
+a:hover,
+a:focus {
   text-decoration: none;
   color: inherit;
 }
