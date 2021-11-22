@@ -11,11 +11,12 @@ body {
 }
 
 .accueuil--img {
-  display:block;  
+  /* display: block; */
   /* pour le tel essayer de faire marcher la transformation */
   position: absolute;
   height: 100%;
   opacity: 0.3;
+  vertical-align: none;
 
   /* -webkit-transform: translateX(-200px);
   -moz-transform: translateX(-200px);
@@ -24,7 +25,6 @@ body {
 
   left: -200px;
   top: 0px;
-
 }
 
 header {
