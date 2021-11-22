@@ -18,7 +18,7 @@ body {
   -webkit-transform: translateX(-200px);
   -moz-transform: translateX(-200px);
   -ms-transform: translateX(-200);
-  transform: translateX(-200px);
+  transform: translateX(-400px);
 }
 
 header {
