@@ -7,7 +7,7 @@ body {
 .accueuil {
   position: relative;
   overflow: hidden;
-  height:100vh;
+  height: 100vh;
 }
 
 .accueuil--img {
@@ -113,6 +113,7 @@ Au cas ou je met l'image que ici.
 #form {
   margin-left: 5%;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .form--h3 {
@@ -181,4 +182,27 @@ select {
   padding-right: 70px;
   padding-left: 70px;
 }
-/* End Footer */
+/* End Avantages */
+
+
+/* Footer */
+
+footer{
+  text-align: center;
+}
+
+.footer--icon {
+  margin-right: 2%;
+  margin-bottom: 1%;
+  color: black;
+  
+}
+
+footer a, a:hover, a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-text {
+  color: #8f8f8f;
+}
