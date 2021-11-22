@@ -11,6 +11,8 @@ body {
 }
 
 .accueuil--img {
+  display:block;  
+  /* pour le tel essayer de faire marcher la transformation */
   position: absolute;
   height: 100%;
   opacity: 0.3;
