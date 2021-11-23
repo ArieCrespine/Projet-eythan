@@ -32,7 +32,7 @@
   </head>
   <body>
     <div class="accueuil">
-      <img class="accueuil--img" src="images/logoNew.png" style="position: absolute; top: 0; left: -200px; height: 100%; opacity: 0.3;"/>
+      <img class="accueuil--img" src="images/logoNew.png" alt="logo" />
       <header>
         <img
           class="header--logo"
@@ -69,42 +69,64 @@
 
     <section id="form">
       <h3 class="form--h3">Annonce du formulaire</h3>
-      <form action="" method="get">
-        <p>Formation souhaitée</p>
-        <!-- liste deroulante -->
-        <!-- <label class="form--formationSouhaiter" for="cars"
+      <div class="test-shadow">
+        <form action="" method="get">
+          <p class="form--p">Formation souhaitée</p>
+          <!-- liste deroulante -->
+          <!-- <label class="form--formationSouhaiter" for="cars"
           >Quel formation souhaitez vous integrer ?</label
         >
         <br /> -->
 
-        <!-- <select name="cars" id="cars">
+          <!-- <select name="cars" id="cars">
           <option value="volvo">Volvo</option>
           <option value="saab">Saab</option>
           <option value="mercedes">Mercedes</option>
           <option value="audi">Audi</option>
         </select> -->
-       
 
-        <p>etes vous salarie du secteur public ou retraite?</p>
+          <p class="form--p">
+            Etes vous salarie du secteur public ou retraite?
+          </p>
+          <label>
+            <input
+              type="radio"
+              class="option-input radio"
+              name="example"
+              checked
+            />
+            oui
+          </label>
+          <label>
+            <input type="radio" class="option-input radio" name="example" />
+            Non
+          </label>
+          <!-- 
         <input type="radio" name="travail" value="oui" id="travail" />
         <label for="travail">oui</label>
         <input type="radio" id="travail" name="travail" value="non" />
         <label for="travail">Non</label>
-        <br />
+        <br /> -->
 
-        <!-- Nom -->
-        <!-- <label for="name">Nom : <span>*</span></label> -->
-        <input type="text" id="name" name="name" placeholder="Votre Nom" />
-        <br />
+          <!-- Nom -->
+          <!-- <label for="name">Nom : <span>*</span></label> -->
+          <input type="text" id="name" name="name" placeholder="Nom" />
 
-        <!-- <label for="prenom">Prenom :</label> -->
-        <input type="text" id="prenom" name="name" placeholder="Votre Prenom" />
-        <br />
+          <!-- <label for="prenom">Prenom :</label> -->
+          <input type="text" id="prenom" name="name" placeholder="Prenom" />
 
-        <!-- <label for="email">E-mail :</label> -->
-        <input type="email" id="email" name="email" placeholder="Votre mail" />
-      </form>
+          <!-- <label for="email">E-mail :</label> -->
+          <input type="email" id="email" name="email" placeholder="E-mail" />
+          <input
+            class="form--submit"
+            type="submit"
+            value="Envoyer"
+            placeholder="Envoyer"
+          />
+        </form>
+      </div>
     </section>
+
     <section id="avantages">
       <!-- <i class="fas fa-chart-line"></i> -->
       <div class="container-fluid">
@@ -144,7 +166,10 @@
         <p>
           <i class="fab fa-facebook-f footer--icon"></i>
           <i class="fab fa-instagram footer--icon"></i>
-          <a href="mailto:crespinearie@gmail.com"  class="fas fa-envelope footer--icon"></a>
+          <a
+            href="mailto:crespinearie@gmail.com"
+            class="fas fa-envelope footer--icon"
+          ></a>
         </p>
         <p class="footer-text">© Copyright 2021 myCPF</p>
       </div>
