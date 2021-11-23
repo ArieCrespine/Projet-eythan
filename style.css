@@ -4,24 +4,25 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.accueuil {
+/* .accueuil {
   position: relative;
   overflow: hidden;
   height: 100vh;
-}
+} */
 
 .accueuil--img {
   /* display: block; */
   /* pour le tel essayer de faire marcher la transformation */
   position: absolute;
   height: 100%;
+  width: 100%;
   opacity: 0.3;
   /* -webkit-transform: translateX(-200px);
   -moz-transform: translateX(-200px);
   -ms-transform: translateX(-200);
   transform: translateX(-200px); */
 
-  left: -200px;
+  /* left: -200px; */
   top: 0px;
 }
 
