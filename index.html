@@ -30,10 +30,11 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="accueuil">
       <img class="accueuil--img" src="images/logoNew.png" alt="logo" />
-      <header>
+      <div class="header">
         <img
           class="header--logo"
           src="images/mon-compte-formation.svg"
@@ -43,7 +44,7 @@
           <a href="#form">Nous Contacters</a>
         </div>
         <!-- <img class="header--logoQualiopi" src="" alt="Logo Qualiopi" > -->
-      </header>
+      </div>
 
       <section id="description">
         <!-- <div>
@@ -90,13 +91,8 @@
             Etes vous salarie du secteur public ou retraite?
           </p>
           <label>
-            <input
-              type="radio"
-              class="option-input radio"
-              name="example"
-              checked
-            />
-            oui
+            <input type="radio" class="option-input radio" name="example" />
+            Oui
           </label>
           <label>
             <input type="radio" class="option-input radio" name="example" />
@@ -127,6 +123,8 @@
         </div>
       </form>
     </section>
+
+    <!-- Avantages -->
 
     <section id="avantages">
       <!-- <i class="fas fa-chart-line"></i> -->
@@ -162,7 +160,9 @@
       </div>
     </section>
 
-    <footer id="footer" class="white-section">
+    <!-- Footer -->
+
+    <footer id="footer">
       <div class="container-fluid">
         <p>
           <i class="fab fa-facebook-f footer--icon"></i>
@@ -179,6 +179,7 @@
     <!-- SCRIPT -->
 
     <script src="script.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
