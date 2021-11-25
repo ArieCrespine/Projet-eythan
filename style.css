@@ -2,13 +2,11 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Montserrat", sans-serif;
- 
-
 }
 
 .accueuil {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 100vh;
 }
 
@@ -32,7 +30,7 @@ body {
   z-index: 5; */
   height: 60px;
   box-sizing: content-box;
-  
+
   /* padding-bottom: 10px; */
 }
 
@@ -120,18 +118,20 @@ Au cas ou je met l'image que ici.
 
 /* Form */
 
+#form {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-weight: 500;
+  color: rgb(8, 32, 79, 0.89);
+}
+
 .test-shadow {
   padding-bottom: 20px;
   margin: 5% 5%;
   background: white;
   border-radius: 8px;
   box-shadow: 2px 6px 20px 2px rgba(10, 10, 120, 0.15);
-}
-
-#form {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  text-align: center;
 }
 
 .form--h3 {
@@ -163,7 +163,7 @@ select {
 .form--submit {
   display: block;
   position: relative;
-  left: 20%;
+  left: 30%;
   background-color: #4080e0;
   color: #fff;
   outline: none;
