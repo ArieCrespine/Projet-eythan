@@ -26,6 +26,9 @@ body {
 
 @media (max-width: 768px) {
   .accueuil--img {
+    position: absolute;
+    top: 0px;
+    left: 50px;
     width: auto;
     transform: translateX(-80px);
   }
@@ -119,7 +122,7 @@ body {
   background-color: #ecf0f3;
   color: rgb(8, 32, 79, 0.89);
   margin-bottom: 3%;
-  padding: 4%;;
+  padding: 4%;
 }
 
 .form--h2 {
