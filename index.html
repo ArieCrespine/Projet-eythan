@@ -32,6 +32,8 @@
   </head>
 
   <body>
+    <!-- Accueil -->
+
     <div class="accueuil">
       <img class="accueuil--img" src="images/logoNew.png" alt="logo" />
       <div class="header">
@@ -41,87 +43,217 @@
           alt="logo"
         />
         <div class="header--contact">
-          <a href="#form">Nous Contacters</a>
+          <a href="#form">Nous Contacter</a>
         </div>
         <!-- <img class="header--logoQualiopi" src="" alt="Logo Qualiopi" > -->
       </div>
 
       <section id="description">
-        <!-- <div>
-           <img
-          class="description--bgImg"
-          src="images/img-bg-description.jpg"
-          alt="img-bg-description"
-        /> 
-        </div> -->
-        <h1 class="description--h1">Votre Formation cle en main</h1>
+        <h1 class="description--h1">
+          Plus de 100 formations <br /><span> 100% finance.</span>
+        </h1>
         <p class="description--text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elt. Accusantium,
-          harum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
-          dicta? Alias illo eum optio iure quis saepe ut dignissimos veniam.
+          Ameliorer votre CV et valorisez vos compétences.
         </p>
 
-        <a href="#form" role="button" class="btn btn-primary btn-lg btnLien"
-          >Connaitre Mon Solde CPF</a
+        <a
+          href="#form"
+          role="button"
+          class="btn btn-primary btn-lg description--btn"
+          >Verifer mes droits CPF</a
         >
       </section>
     </div>
+
     <!-- Formulaire -->
 
     <section id="form">
-      <h3 class="form--h3">Annonce du formulaire</h3>
+      <form action="" name="myForm" id="myForm">
+        <h2 class="form--h2">
+          Remplissez le formulaire pour savoir si vous êtes éligibles
+        </h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="form--p">Quelle formation recherchez vous ?</p>
+            <select
+              name="choix-formation"
+              id="choix-formation"
+              class="form-select"
+            >
+              <option name="choix-formation" value="Base Informatique">
+                Base Informatique
+              </option>
+              <option name="choix-formation" value="Autocad">Autocad</option>
+              <option name="choix-formation" value="">
+                Pack Office (Word, Excel, Powerpoint)
+              </option>
+              <option name="choix-formation" value="">
+                PAO (Photoshop Indesign illustrator)
+              </option>
+              <option name="choix-formation" value="Réseaux sociaux">
+                Réseaux sociaux
+              </option>
+              <option name="choix-formation" value="">
+                Création site internet WordPress
+              </option>
+              <option name="choix-formation" value="">
+                Création d'entreprise
+              </option>
+              <option name="choix-formation" value="">Managment</option>
+              <option name="choix-formation" value="">Hygiène</option>
+              <option name="choix-formation" value="">
+                Esthétique ongles ou cils
+              </option>
+              <option name="choix-formation" value="">Premiers secours</option>
+              <option name="choix-formation" value="">
+                Secrétaire comptable
+              </option>
+              <option name="choix-formation" value="">
+                Secrétaire médicale
+              </option>
+              <option name="choix-formation" value="">
+                Autocad + Sketchup
+              </option>
+              <option name="choix-formation" value="">
+                Langages des signes
+              </option>
+              <option name="choix-formation" value="">Francais</option>
+              <option name="choix-formation" value="">Anglais</option>
+              <option name="choix-formation" value="">Espagnol</option>
+              <option name="choix-formation" value="">Arabe</option>
+              <option name="choix-formation" value="">Italien</option>
+              <option name="choix-formation" value="">Hébreu</option>
+              <option name="choix-formation" value="">Japonais</option>
+              <option name="choix-formation" value="">Chinois</option>
+              <option name="choix-formation" value="">Allemand</option>
+              <option name="choix-formation" value="">Portugais</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <p class="form--p">
+              Avez vous cumulé 24 mois de travail depuis 2015 ?
+            </p>
+            <div class="radio-answer">
+              <label>
+                <input
+                  type="radio"
+                  class="option-input radio"
+                  name="example"
+                  value="Oui"
+                />
+                Oui
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  class="option-input radio form-control"
+                  name="example"
+                  value="Non"
+                />
+                Non
+              </label>
+            </div>
+          </div>
 
-      <form action="" method="get">
-        <div class="test-shadow">
-          <p class="form--p">Formation souhaitée</p>
-          <!-- liste deroulante -->
-          <!-- <label class="form--formationSouhaiter" for="cars"
-          >Quel formation souhaitez vous integrer ?</label
-        >
-        <br /> -->
+          <div class="col-md-6">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nom"
+              class="form-control"
+            />
+          </div>
 
-          <!-- <select name="cars" id="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select> -->
+          <div class="col-md-6">
+            <input
+              type="text"
+              id="prenom"
+              name="name"
+              placeholder="Prenom"
+              class="form-control"
+            />
+          </div>
 
-          <p class="form--p">
-            Etes vous salarie du secteur public ou retraite?
-          </p>
-          <label>
-            <input type="radio" class="option-input radio" name="example" />
-            Oui
-          </label>
-          <label>
-            <input type="radio" class="option-input radio" name="example" />
-            Non
-          </label>
-          <!-- 
-        <input type="radio" name="travail" value="oui" id="travail" />
-        <label for="travail">oui</label>
-        <input type="radio" id="travail" name="travail" value="non" />
-        <label for="travail">Non</label>
-        <br /> -->
+          <div class="col-md-6">
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Telephone"
+              class="form-control"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+              class="form-control"
+            />
+          </div>
 
-          <!-- Nom -->
-          <!-- <label for="name">Nom : <span>*</span></label> -->
-          <input type="text" id="name" name="name" placeholder="Nom" />
-
-          <!-- <label for="prenom">Prenom :</label> -->
-          <input type="text" id="prenom" name="name" placeholder="Prenom" />
-
-          <!-- <label for="email">E-mail :</label> -->
-          <input type="email" id="email" name="email" placeholder="E-mail" />
           <input
             class="form--submit"
             type="submit"
             value="Envoyer"
             placeholder="Envoyer"
+            onclick="return getAction();"
           />
         </div>
       </form>
+    </section>
+
+    <!-- LE CPF- Presentation -->
+
+    <section id="presentation">
+      <div class="presentation-div1">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="presentation-h3">
+              Qu est ce que le compte personnel de formation ( CPF ) ?
+            </h3>
+            <p class="presentation-p">
+              Le CPF permet à toute personne salarié ou demandeur d’emploi de
+              suivre à son initiative une formation. Le Cpf accompagne son
+              titulaire dés son entrée dans la vie professionnelle jusqu’à son
+              départ à la retraite .
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="/images/LE_CPF_1.jpg"
+              alt="image de decoration"
+              width="350px"
+              height="250px"
+              class="presentation-div1-img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="presentation-div2">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="/images/LE_CPF_2.jpg"
+              alt="image de decoration"
+              width="350px"
+              height="250px"
+              class="presentation-div2-img"
+            />
+          </div>
+          <div class="col-md-6">
+            <p class="presentation-p">
+              Pour toutes nos formations vous êtes accompagnés d’un expert qui
+              partage avec vous son expérience d’utilisation , son savoir et ses
+              conseils pour vous permettre de bénéficier au mieux de votre
+              formation.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Avantages -->
@@ -135,8 +267,8 @@
 
             <h3 class="feature-h3">Benefique</h3>
             <p class="feature-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Similique, aliquam.
+              Propulser votre carrière et gagnez en rémunération grâce à une
+              formation.
             </p>
           </div>
           <div class="col-md-4 feature-item">
@@ -144,16 +276,15 @@
             <i class="fas fa-coins feature-i"></i>
             <h3 class="feature-h3">Gratuite</h3>
             <p class="feature-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, officiis!
+              Les formations proposées sont prises en charge. Vous n’avez rien à
+              débourser.
             </p>
           </div>
           <div class="col-md-4 feature-item">
             <i class="fas fa-graduation-cap feature-i"></i>
             <h3 class="feature-h3">Certifiantes</h3>
             <p class="feature-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-              nesciunt.
+              Obtenez une certification reconnue et valorisez vos compétences.
             </p>
           </div>
         </div>
@@ -166,7 +297,7 @@
       <div class="container-fluid">
         <p>
           <i class="fab fa-facebook-f footer--icon"></i>
-          <i class="fab fa-instagram footer--icon"></i>
+          <!-- <i class="fab fa-instagram footer--icon"></i> -->
           <a
             href="mailto:crespinearie@gmail.com"
             class="fas fa-envelope footer--icon"
