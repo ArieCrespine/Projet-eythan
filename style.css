@@ -12,7 +12,7 @@ body {
 .accueuil {
   position: relative;
   overflow: hidden;
-  height: 80vh;
+  height: 95vh;
 }
 
 .accueuil--img {
@@ -26,16 +26,10 @@ body {
 
 @media (max-width: 768px) {
   .accueuil--img {
-    /* position: absolute;
-    top: 0px;
-    left: 50px;
-    width: auto;
-    transform: translateX(-80px); */
-    width: 100%;
-    height: 800px;
+    left: 0px;
     object-fit: cover;
-    object-position: 25% top;
-    
+    object-position: 15% top;
+    width: 100%;
   }
 }
 
@@ -120,6 +114,75 @@ body {
   }
 }
 
+/* Step Form */
+
+.stepForm {
+  height: 400px;
+  width: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 50px;
+  background: #ecf0f3;
+}
+
+@media (max-width: 768px) {
+  .stepForm {
+    display: none;
+  }
+}
+
+#regForm {
+  height: 100%;
+  min-width: 300px;
+  padding: 20px;
+}
+
+#regForm button {
+  margin-top: 20px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04aa6d;
+}
+
 /* Form */
 
 #form {
@@ -150,14 +213,19 @@ body {
   margin-bottom: 5%;
 }
 
-select {
+#form select {
   font-size: 20px;
   margin-top: 30px;
   padding: 10px;
   width: inherit;
 }
 
-label {
+#form p {
+  position: relative;
+  top: 30px;
+}
+
+#form label {
   margin: 0 10px 0 0;
 }
 
@@ -285,10 +353,7 @@ a:focus {
 
 /* END Footer */
 
-form p {
-  position: relative;
-  top: 30px;
-}
+
 
 @keyframes click-wave {
   0% {
@@ -361,6 +426,14 @@ form p {
 }
 .option-input.radio::after {
   border-radius: 50%;
+}
+
+
+
+/* Class d'effet général */
+
+.hide{
+  display: none;
 }
 
 /* 

@@ -36,6 +36,7 @@
 
     <div class="accueuil">
       <img class="accueuil--img" src="images/logoNew.png" alt="logo" />
+
       <div class="header">
         <img
           class="header--logo"
@@ -45,15 +46,14 @@
         <div class="header--contact">
           <a href="#form">Nous Contacter</a>
         </div>
-        
       </div>
 
       <section id="description">
         <h1 class="description--h1">
-          Plus de 1000 formations <br /><span> 100% financées.</span>
+          Plus de 450 formations <br /><span> 100% financées.</span>
         </h1>
         <p class="description--text">
-          Ameliorer votre CV et valorisez vos compétences.
+          Ameliorez votre CV et valorisez vos compétences.
         </p>
 
         <a
@@ -62,13 +62,130 @@
           class="btn btn-primary btn-lg description--btn"
           >Verifer mes droits CPF</a
         >
+        <div class="stepForm">
+          <form id="regForm" action="">
+            <h4>je teste mon eligibilité</h4>
+            <h5>Remplissez le formulaire pour savoir si vous êtes éligibles</h5>
+
+            <!-- One "tab" for each step in the form: -->
+            <div class="tab">
+              <p>Quelle formation recherchez vous ?</p>
+              <select
+                name="choix-formation"
+                id="choix-formation"
+                class="form-select"
+              >
+                <option name="choix-formation" value="Base Informatique">
+                  Base Informatique
+                </option>
+                <option name="choix-formation" value="Autocad">Autocad</option>
+                <option name="choix-formation" value="">
+                  Pack Office (Word, Excel, Powerpoint)
+                </option>
+                <option name="choix-formation" value="">
+                  PAO (Photoshop Indesign illustrator)
+                </option>
+                <option name="choix-formation" value="Réseaux sociaux">
+                  Réseaux sociaux
+                </option>
+                <option
+                  name="choix-formation"
+                  value="Création site internet WordPress"
+                >
+                  Création site internet WordPress
+                </option>
+                <option name="choix-formation" value="">
+                  Création d'entreprise
+                </option>
+                <option name="choix-formation" value="">Managment</option>
+                <option name="choix-formation" value="">Hygiène</option>
+                <option name="choix-formation" value="">
+                  Esthétique ongles ou cils
+                </option>
+                <option name="choix-formation" value="">
+                  Premiers secours
+                </option>
+                <option name="choix-formation" value="">
+                  Secrétaire comptable
+                </option>
+                <option name="choix-formation" value="">
+                  Secrétaire médicale
+                </option>
+                <option name="choix-formation" value="">
+                  Autocad + Sketchup
+                </option>
+                <option name="choix-formation" value="">
+                  Langages des signes
+                </option>
+                <option name="choix-formation" value="">Francais</option>
+                <option name="choix-formation" value="">Anglais</option>
+                <option name="choix-formation" value="">Espagnol</option>
+                <option name="choix-formation" value="">Arabe</option>
+                <option name="choix-formation" value="">Italien</option>
+                <option name="choix-formation" value="">Hébreu</option>
+                <option name="choix-formation" value="">Japonais</option>
+                <option name="choix-formation" value="">Chinois</option>
+                <option name="choix-formation" value="">Allemand</option>
+                <option name="choix-formation" value="">Portugais</option>
+              </select>
+
+              <p>Avez vous cumulé 24 mois de travail depuis 2015 ?</p>
+              <select name="temps_travail" id="">
+                <option value="Oui" name="temps_travail">Oui</option>
+                <option value="Non" name="temps_travail">Non</option>
+              </select>
+
+              <p>Quel est votre situation actuelle ?</p>
+              <select name="situation_pro" id="">
+                <option value="" name="situation_pro">employe</option>
+                <option value="" name="situation_pro">etudiant</option>
+                <option value="" name="situation_pro">lorme</option>
+                <option value="" name="situation_pro">lorme</option>
+              </select>
+            </div>
+
+            <div class="tab">
+              <input placeholder="Nom..." oninput="this.className = ''" />
+
+              <input placeholder="Prenom..." oninput="this.className = ''" />
+
+              <input placeholder="E-mail..." oninput="this.className = ''" />
+
+              <input placeholder="Phone..." oninput="this.className = ''" />
+            </div>
+
+            <div style="overflow: auto">
+              <div style="float: right">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+                  Precedent
+                </button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                  Suivant
+                </button>
+              </div>
+            </div>
+
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align: center">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+          </form>
+        </div>
       </section>
     </div>
 
     <!-- Formulaire -->
 
     <section id="form">
-      <form action="" name="myForm" id="myForm">
+      <form
+        action="form_handler.php"
+        method="POST"
+        name="myForm"
+        id="myForm"
+        target="myIframe"
+      >
         <h2 class="form--h2">
           Remplissez le formulaire pour savoir si vous êtes éligibles
         </h2>
@@ -79,54 +196,72 @@
               name="choix-formation"
               id="choix-formation"
               class="form-select"
+              required
             >
+              <option value="" disabled selected>Choisir ma formation</option>
               <option name="choix-formation" value="Base Informatique">
                 Base Informatique
               </option>
               <option name="choix-formation" value="Autocad">Autocad</option>
-              <option name="choix-formation" value="">
+              <option
+                name="choix-formation"
+                value="Pack Office (Word, Excel, Powerpoint)"
+              >
                 Pack Office (Word, Excel, Powerpoint)
               </option>
-              <option name="choix-formation" value="">
+              <option
+                name="choix-formation"
+                value="PAO (Photoshop Indesign illustrator)"
+              >
                 PAO (Photoshop Indesign illustrator)
               </option>
               <option name="choix-formation" value="Réseaux sociaux">
                 Réseaux sociaux
               </option>
-              <option name="choix-formation" value="">
+              <option
+                name="choix-formation"
+                value="Création site internet WordPress"
+              >
                 Création site internet WordPress
               </option>
-              <option name="choix-formation" value="">
+              <option name="choix-formation" value="Création d'entreprise">
                 Création d'entreprise
               </option>
-              <option name="choix-formation" value="">Managment</option>
-              <option name="choix-formation" value="">Hygiène</option>
-              <option name="choix-formation" value="">
+              <option name="choix-formation" value="Management">
+                Management
+              </option>
+              <option name="choix-formation" value="Hygiène">Hygiène</option>
+              <option name="choix-formation" value="Esthétique ongles ou cils">
                 Esthétique ongles ou cils
               </option>
-              <option name="choix-formation" value="">Premiers secours</option>
-              <option name="choix-formation" value="">
+              <option name="choix-formation" value="Premiers secours">
+                Premiers secours
+              </option>
+              <option name="choix-formation" value="Secrétaire comptable">
                 Secrétaire comptable
               </option>
-              <option name="choix-formation" value="">
+              <option name="choix-formation" value="Secrétaire médicale">
                 Secrétaire médicale
               </option>
-              <option name="choix-formation" value="">
+              <option name="choix-formation" value="Autocad + Sketchup">
                 Autocad + Sketchup
               </option>
-              <option name="choix-formation" value="">
+              <option name="choix-formation" value="Langages des signes">
                 Langages des signes
               </option>
-              <option name="choix-formation" value="">Francais</option>
-              <option name="choix-formation" value="">Anglais</option>
-              <option name="choix-formation" value="">Espagnol</option>
-              <option name="choix-formation" value="">Arabe</option>
-              <option name="choix-formation" value="">Italien</option>
-              <option name="choix-formation" value="">Hébreu</option>
-              <option name="choix-formation" value="">Japonais</option>
-              <option name="choix-formation" value="">Chinois</option>
-              <option name="choix-formation" value="">Allemand</option>
-              <option name="choix-formation" value="">Portugais</option>
+              <option name="choix-formation" value="français">Francais</option>
+              <option name="choix-formation" value="anglais">Anglais</option>
+              <option name="choix-formation" value="Espagnol">Espagnol</option>
+              <option name="choix-formation" value="Arabe">Arabe</option>
+              <option name="choix-formation" value="italien">Italien</option>
+              <option name="choix-formation" value="hebreu">Hébreu</option>
+              <option name="choix-formation" value="japonais">Japonais</option>
+              <option name="choix-formation" value="chinois">Chinois</option>
+              <option name="choix-formation" value="allemand">Allemand</option>
+              <option name="choix-formation" value="Portugais">
+                Portugais
+              </option>
+              <option></option>
             </select>
           </div>
           <div class="col-md-6">
@@ -140,6 +275,7 @@
                   class="option-input radio"
                   name="example"
                   value="Oui"
+                  required
                 />
                 Oui
               </label>
@@ -159,9 +295,10 @@
             <input
               type="text"
               id="name"
-              name="name"
+              name="lastname"
               placeholder="Nom"
               class="form-control"
+              required
             />
           </div>
 
@@ -169,9 +306,10 @@
             <input
               type="text"
               id="prenom"
-              name="name"
+              name="firstname"
               placeholder="Prenom"
               class="form-control"
+              required
             />
           </div>
 
@@ -182,6 +320,7 @@
               id="tel"
               placeholder="Telephone"
               class="form-control"
+              required
             />
           </div>
           <div class="col-md-6">
@@ -191,6 +330,7 @@
               name="email"
               placeholder="E-mail"
               class="form-control"
+              required
             />
           </div>
 
@@ -203,6 +343,7 @@
           />
         </div>
       </form>
+      <iframe name="myIframe" class="hide" src="form_handler.php"></iframe>
     </section>
 
     <!-- LE CPF- Presentation -->
@@ -212,10 +353,10 @@
         <div class="row">
           <div class="col-md-6">
             <h3 class="presentation-h3">
-              Qu est ce que le compte personnel de formation ( CPF ) ?
+              Qu'est ce que le compte personnel de formation (CPF) ?
             </h3>
             <p class="presentation-p">
-              Le CPF permet à toute personne salarié ou demandeur d’emploi de
+              Le CPF permet à toute personne salariée ou demandeuse d’emploi de
               suivre à son initiative une formation. Le Cpf accompagne son
               titulaire dés son entrée dans la vie professionnelle jusqu’à son
               départ à la retraite .
@@ -259,7 +400,6 @@
     <!-- Avantages -->
 
     <section id="avantages">
-      <!-- <i class="fas fa-chart-line"></i> -->
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-4 feature-item">
@@ -267,12 +407,11 @@
 
             <h3 class="feature-h3">Benefique</h3>
             <p class="feature-description">
-              Propulser votre carrière et gagnez en rémunération grâce à une
+              Propulsez votre carrière et gagnez en rémunération grâce à une
               formation.
             </p>
           </div>
           <div class="col-md-4 feature-item">
-            <!-- <i class="fas fa-euro-sign feature-i-petit"></i> -->
             <i class="fas fa-coins feature-i"></i>
             <h3 class="feature-h3">Gratuite</h3>
             <p class="feature-description">
@@ -297,13 +436,13 @@
       <div class="container-fluid">
         <p>
           <i class="fab fa-facebook-f footer--icon"></i>
-          <!-- <i class="fab fa-instagram footer--icon"></i> -->
+
           <a
             href="mailto:crespinearie@gmail.com"
             class="fas fa-envelope footer--icon"
           ></a>
         </p>
-        <p class="footer-text">© Copyright 2021 myCPF</p>
+        <p class="footer-text">© Copyright 2021 formation-cpf-eligible.fr</p>
       </div>
     </footer>
 
