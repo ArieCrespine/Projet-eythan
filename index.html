@@ -50,10 +50,10 @@
 
       <section id="description">
         <h1 class="description--h1">
-          Plus de 450 formations <br /><span> 100% financées.</span>
+          Plus de 450 formations <br /><span> 100% financées</span>
         </h1>
         <p class="description--text">
-          Ameliorez votre CV et valorisez vos compétences.
+          Offrez vous une formation gratuitement et valorisez vos compétences.
         </p>
 
         <a
@@ -64,7 +64,7 @@
         >
         <div class="stepForm">
           <form id="regForm" action="">
-            <h4>je teste mon eligibilité</h4>
+            <h4>Vérifiez votre éligibilité</h4>
             <h5>Remplissez le formulaire pour savoir si vous êtes éligibles</h5>
 
             <!-- One "tab" for each step in the form: -->
@@ -177,14 +177,16 @@
     </div>
 
     <!-- Formulaire -->
+    <!-- action="form_handler.php"
+    target="myIframe" -->
 
     <section id="form">
       <form
         action="form_handler.php"
+        target="myIframe"
         method="POST"
         name="myForm"
         id="myForm"
-        target="myIframe"
       >
         <h2 class="form--h2">
           Remplissez le formulaire pour savoir si vous êtes éligibles
@@ -339,8 +341,11 @@
             type="submit"
             value="Envoyer"
             placeholder="Envoyer"
-            onclick="return getAction();"
           />
+          <p class="confirmation-envoi hide">
+            Votre demande a bien été prise en compte . Un conseiller vous
+            rappellera sous 24h.
+          </p>
         </div>
       </form>
       <iframe name="myIframe" class="hide" src="form_handler.php"></iframe>
@@ -359,7 +364,7 @@
               Le CPF permet à toute personne salariée ou demandeuse d’emploi de
               suivre à son initiative une formation. Le Cpf accompagne son
               titulaire dés son entrée dans la vie professionnelle jusqu’à son
-              départ à la retraite .
+              départ à la retraite.
             </p>
           </div>
           <div class="col-md-6">
@@ -395,6 +400,46 @@
           </div>
         </div>
       </div>
+
+      <h3>Pourquoi choisir une formation certifiante ?</h3>
+      <p>
+        La certification vous permet de répondre aux besoins des entreprises et
+        aux réalités du travail, puisqu’elle est centrée sur les compétences
+        d’un métier ou d’une fonction.
+      </p>
+      <p>
+        Une certification est un <span class="strong">diplôme professionnel</span>, ou une
+        certification professionnelle dont
+        <span class="strong"> le niveau est reconnu par l’Etat.</span>
+      </p>
+      <p>
+        Elle permet, selon certaines conventions collectives, d’ouvrir droit à
+        un statut ou à un salaire déterminé. C’est également un gage de qualité.
+      </p>
+      <h3>
+        Pourquoi suivre une formation professionnelle en langues vivantes ?
+      </h3>
+      <p>
+        Une certification professionnelle en langue constitue un véritable atout
+        pour exercer n’importe quelle profession dans un cadre et un contexte
+        international. Elle sert à attester de ses compétences auprès d’un
+        employeur, mais peut également faire partie des exigences et pré-requis
+        dans le cadre d’un parcours de formation. Elle valorise votre CV,
+        renforce votre profil, et vous donne de nouveaux arguments pour évoluer
+        dans votre fonction actuelle, changer de poste, faciliter votre mobilité
+        à l’international, ou encore trouver plus facilement un emploi si vous
+        êtes en recherche. <br />Vous souhaitez améliorer votre niveau dans une
+        langue vivante afin d’obtenir une certification reconnue par les
+        employeurs en France et à l’International ? Sachez que vos droits
+        formation vous permettent de financer les formations et certifications
+        les plus réputées comme les tests TOEIC ou LILATE en anglais, mais aussi
+        dans d’autres langues.
+      </p>
+      <p>
+        En fonction de vos attentes, vos besoins, et vos compétences déjà
+        acquises, faites votre choix parmi un grand nombre de formations
+        certifiantes .
+      </p>
     </section>
 
     <!-- Avantages -->
@@ -405,7 +450,7 @@
           <div class="col-md-4 feature-item">
             <i class="fas fa-chart-line feature-i"></i>
 
-            <h3 class="feature-h3">Benefique</h3>
+            <h3 class="feature-h3">Bénéfique</h3>
             <p class="feature-description">
               Propulsez votre carrière et gagnez en rémunération grâce à une
               formation.
@@ -438,7 +483,7 @@
           <i class="fab fa-facebook-f footer--icon"></i>
 
           <a
-            href="mailto:crespinearie@gmail.com"
+            href="mailto:contact@formation-cpf-eligible.fr"
             class="fas fa-envelope footer--icon"
           ></a>
         </p>

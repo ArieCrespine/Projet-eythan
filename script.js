@@ -21,6 +21,9 @@
 
 // }
 
+
+// Step Form
+
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
@@ -97,3 +100,21 @@ function fixStepIndicator(n) {
   //... and adds the "active" class to the current step:
   x[n].className += " active";
 }
+
+// End Step Form
+
+
+// Hide submit button to prevent multiple sending.
+
+btnEnvoyer = document.querySelector(".form--submit");
+confirmation_envoi = document.querySelector(".confirmation-envoi");
+btnEnvoyer.addEventListener("click", () => {
+  btnEnvoyer.classList.add("form--submitHide");
+  confirmation_envoi.classList.remove("hide");
+
+
+  setTimeout(() => {
+    btnEnvoyer.classList.remove("form--submitHide");
+    confirmation_envoi.classList.add("hide");
+  },5000)
+})
