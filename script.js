@@ -106,8 +106,8 @@ function fixStepIndicator(n) {
 
 // Hide submit button to prevent multiple sending.
 
-btnEnvoyer = document.querySelector(".form--submit");
-confirmation_envoi = document.querySelector(".confirmation-envoi");
+var btnEnvoyer = document.querySelector(".form--submit");
+var confirmation_envoi = document.querySelector(".confirmation-envoi");
 btnEnvoyer.addEventListener("click", () => {
   btnEnvoyer.classList.add("form--submitHide");
   confirmation_envoi.classList.remove("hide");

@@ -192,7 +192,7 @@
           Remplissez le formulaire pour savoir si vous êtes éligibles
         </h2>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 col_N1">
             <p class="form--p">Quelle formation recherchez vous ?</p>
             <select
               name="choix-formation"
@@ -251,81 +251,75 @@
               <option name="choix-formation" value="Langages des signes">
                 Langages des signes
               </option>
-              <option name="choix-formation" value="français">Francais</option>
               <option name="choix-formation" value="anglais">Anglais</option>
-              <option name="choix-formation" value="Espagnol">Espagnol</option>
-              <option name="choix-formation" value="Arabe">Arabe</option>
-              <option name="choix-formation" value="italien">Italien</option>
-              <option name="choix-formation" value="hebreu">Hébreu</option>
-              <option name="choix-formation" value="japonais">Japonais</option>
-              <option name="choix-formation" value="chinois">Chinois</option>
-              <option name="choix-formation" value="allemand">Allemand</option>
-              <option name="choix-formation" value="Portugais">
-                Portugais
+              <option name="choix-formation" value="Permis de conduire">
+                Permis de conduire
               </option>
-              <option></option>
+            </select>
+
+            <p class="form--p temps_travail">
+              Avez-vous cumulé 24 mois de travail depuis 2015 ?
+            </p>
+
+            <select
+              name="temps_travail"
+              id="temps_travail"
+              class="form--select"
+            >
+              <option value="" disabled selected></option>
+              <option value="Oui" name="temps_travail">Oui</option>
+              <option value="Non" name="temps_travail">Non</option>
+            </select>
+
+            <p class="form--p">Quel est votre statut actuel ?</p>
+            <select
+              name="situation_pro"
+              id="situation_pro"
+              class="form--select"
+            >
+              <option value="" disabled selected></option>
+              <option value="Salarié" name="situation_pro">Salarié</option>
+              <option value="Indépendant" name="situation_pro">
+                Indépendant
+              </option>
+              <option value="Fonctionnaire titulaire" name="situation_pro">
+                Fonctionnaire titulaire
+              </option>
+              <option value="Fonctionnaire contractuel" name="situation_pro">
+                Fonctionnaire contractuel
+              </option>
+              <option value="Etudiant" name="situation_pro">Etudiant</option>
+              <option value="Retraité" name="situation_pro">Retraité</option>
             </select>
           </div>
-          <div class="col-md-6">
-            <p class="form--p">
-              Avez vous cumulé 24 mois de travail depuis 2015 ?
-            </p>
-            <div class="radio-answer">
-              <label>
-                <input
-                  type="radio"
-                  class="option-input radio"
-                  name="example"
-                  value="Oui"
-                  required
-                />
-                Oui
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  class="option-input radio form-control"
-                  name="example"
-                  value="Non"
-                />
-                Non
-              </label>
-            </div>
-          </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 form_right">
             <input
               type="text"
               id="name"
               name="lastname"
               placeholder="Nom"
-              class="form-control"
+              class="form-control first_input"
               required
             />
-          </div>
-
-          <div class="col-md-6">
             <input
               type="text"
               id="prenom"
               name="firstname"
-              placeholder="Prenom"
+              placeholder="Prénom"
               class="form-control"
               required
             />
-          </div>
 
-          <div class="col-md-6">
             <input
               type="tel"
               name="tel"
               id="tel"
-              placeholder="Telephone"
+              placeholder="Téléphone"
               class="form-control"
               required
             />
-          </div>
-          <div class="col-md-6">
+
             <input
               type="email"
               id="email"
@@ -339,8 +333,8 @@
           <input
             class="form--submit"
             type="submit"
-            value="Envoyer"
-            placeholder="Envoyer"
+            value="Valider"
+            placeholder="Valider"
           />
           <p class="confirmation-envoi hide">
             Votre demande a bien été prise en compte . Un conseiller vous
@@ -401,6 +395,14 @@
         </div>
       </div>
 
+      <img
+        src="images/LE_CPF_2.jpg"
+        alt="image de decoration"
+        width="350px"
+        height="250px"
+        class="Img_PetitEcran_n2"
+      />
+
       <h3>Pourquoi choisir une formation certifiante ?</h3>
       <p>
         La certification vous permet de répondre aux besoins des entreprises et
@@ -408,8 +410,9 @@
         d’un métier ou d’une fonction.
       </p>
       <p>
-        Une certification est un <span class="strong">diplôme professionnel</span>, ou une
-        certification professionnelle dont
+        Une certification est un
+        <span class="strong">diplôme professionnel</span>, ou une certification
+        professionnelle dont
         <span class="strong"> le niveau est reconnu par l’Etat.</span>
       </p>
       <p>
